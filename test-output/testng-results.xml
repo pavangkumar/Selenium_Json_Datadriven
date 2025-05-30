@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-30T19:01:42 IST" name="Suite" finished-at="2025-05-30T19:01:59 IST" duration-ms="17235">
+    <groups>
+    </groups>
+    <test started-at="2025-05-30T19:01:42 IST" name="Test" finished-at="2025-05-30T19:01:59 IST" duration-ms="17235">
+      <class name="tests.ProductPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ProductPageTest@3d51f06e]" started-at="2025-05-30T19:01:42 IST" name="setup" finished-at="2025-05-30T19:01:49 IST" duration-ms="6966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="productInfoTest(pojo.ProductData)[pri:0, instance:tests.ProductPageTest@3d51f06e]" started-at="2025-05-30T19:01:50 IST" name="productInfoTest" data-provider="getProductTestData" finished-at="2025-05-30T19:01:53 IST" duration-ms="2945" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ProductData [searchKey=macbook, productName=MacBook Pro, imageCount=4, brand=Apple]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productInfoTest -->
+        <test-method signature="productInfoTest(pojo.ProductData)[pri:0, instance:tests.ProductPageTest@3d51f06e]" started-at="2025-05-30T19:01:53 IST" name="productInfoTest" data-provider="getProductTestData" finished-at="2025-05-30T19:01:54 IST" duration-ms="1667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ProductData [searchKey=macbook, productName=MacBook Air, imageCount=4, brand=Apple]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productInfoTest -->
+        <test-method signature="productInfoTest(pojo.ProductData)[pri:0, instance:tests.ProductPageTest@3d51f06e]" started-at="2025-05-30T19:01:54 IST" name="productInfoTest" data-provider="getProductTestData" finished-at="2025-05-30T19:01:57 IST" duration-ms="2513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ProductData [searchKey=imac, productName=iMac, imageCount=3, brand=Apple]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productInfoTest -->
+        <test-method signature="productInfoTest(pojo.ProductData)[pri:0, instance:tests.ProductPageTest@3d51f06e]" started-at="2025-05-30T19:01:57 IST" name="productInfoTest" data-provider="getProductTestData" finished-at="2025-05-30T19:01:59 IST" duration-ms="2482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ProductData [searchKey=canon, productName=Canon EOS 5D, imageCount=3, brand=Canon]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productInfoTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.ProductPageTest@3d51f06e]" started-at="2025-05-30T19:01:59 IST" name="tearDown" finished-at="2025-05-30T19:01:59 IST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.ProductPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
