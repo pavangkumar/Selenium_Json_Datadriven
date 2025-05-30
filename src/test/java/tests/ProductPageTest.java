@@ -55,6 +55,7 @@ public class ProductPageTest {
 		softAssert.assertEquals(actualHeader, product.getProductName());
 		softAssert.assertEquals(actualBrand, product.getBrand());
 		softAssert.assertEquals(actProductImageCount, product.getImageCount());
+		System.out.println("tests ended");
 
 		softAssert.assertAll();
 
