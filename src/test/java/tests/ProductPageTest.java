@@ -5,17 +5,16 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 
 import pages.ProductPage;
 import pojo.ProductData;
+import util.HtmlReportScreenshot;
 import util.JsonDataReader;
+import util.WordReportCreator;
 
 public class ProductPageTest {
 	WebDriver driver;
@@ -64,6 +63,12 @@ public class ProductPageTest {
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
+	}
+
+	@AfterSuite
+	public void AfterSuite() throws Exception {
+		HtmlReportScreenshot.capture();
+		WordReportCreator.create();
 	}
 
 }
