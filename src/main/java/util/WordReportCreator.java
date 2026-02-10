@@ -27,7 +27,7 @@ public class WordReportCreator {
         title.setFontSize(16);
 
         byte[] image = Files.readAllBytes(
-                Path.of("report.png"));
+                Path.of("ExecutionReport.png"));
 
         XWPFParagraph imgPara = doc.createParagraph();
         imgPara.setSpacingBefore(100);

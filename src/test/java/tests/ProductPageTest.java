@@ -14,6 +14,7 @@ import pages.ProductPage;
 import pojo.ProductData;
 import util.HtmlReportScreenshot;
 import util.JsonDataReader;
+import util.ReportScreenshotUtil;
 import util.WordReportCreator;
 
 public class ProductPageTest {
@@ -67,7 +68,18 @@ public class ProductPageTest {
 
 	@AfterSuite
 	public void AfterSuite() throws Exception {
-		HtmlReportScreenshot.capture();
+
+		//String reportPath = System.getProperty("D:\\Selenium_Json_Datadriven\\test-output\\emailable-report.html");
+		String reportPath = System.getProperty("user.dir")
+				+ "\\test-output\\emailable-report.html";
+
+		System.out.println("report path " +reportPath);
+
+		ReportScreenshotUtil.captureFullReportScreenshot(
+				reportPath,
+				"ExecutionReport.png"
+		);
+		//HtmlReportScreenshot.capture();
 		WordReportCreator.create();
 	}
 
